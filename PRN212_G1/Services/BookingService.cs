@@ -14,7 +14,6 @@ namespace Services
         }
 
         public List<Booking> GetBookings() => _bookingRepository.GetBookings();
-
         public Booking? GetBookingById(int id) => _bookingRepository.GetBookingById(id);
 
         public void SaveBooking(Booking booking) => _bookingRepository.SaveBooking(booking);

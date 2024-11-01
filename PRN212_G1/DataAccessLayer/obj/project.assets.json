@@ -3073,11 +3073,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\New folder\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\New folder\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\PRN212_G1\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\New folder\\PRN212\\PRN212_G1\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3095,8 +3095,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj"
+            "C:\\Users\\Admin\\Documents\\New folder\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Documents\\New folder\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj"
             }
           }
         }

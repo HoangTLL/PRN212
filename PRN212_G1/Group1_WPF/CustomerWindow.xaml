@@ -1,0 +1,145 @@
+﻿<Window x:Class="Group1_WPF.CustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Customer Dashboard" Height="600" Width="1000">
+    <Grid>
+        <TabControl>
+            <!-- Profile Tab -->
+            <TabItem Header="Profile">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0">
+                        <TextBlock Text="User Profile" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+                    </StackPanel>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Labels -->
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Name:" Margin="5"/>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Email:" Margin="5"/>
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Phone Number:" Margin="5"/>
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Date of Birth:" Margin="5"/>
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Password:" Margin="5"/>
+
+                        <!-- Input fields -->
+                        <TextBox x:Name="NameTextBox" Grid.Row="0" Grid.Column="1" Margin="5"/>
+                        <TextBox x:Name="EmailTextBox" Grid.Row="1" Grid.Column="1" Margin="5" IsReadOnly="True"/>
+                        <TextBox x:Name="PhoneTextBox" Grid.Row="2" Grid.Column="1" Margin="5"/>
+                        <DatePicker x:Name="DobPicker" Grid.Row="3" Grid.Column="1" Margin="5"/>
+                        <PasswordBox x:Name="PasswordBox" Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+                        <!-- Buttons -->
+                        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" Margin="5">
+                            <Button x:Name="UpdateButton" Content="Update Profile" Click="UpdateButton_Click" Width="100" Margin="0,0,10,0"/>
+                            <Button x:Name="LogoutButton" Content="Logout" Click="LogoutButton_Click" Width="100"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <!-- Trips Tab -->
+            <TabItem Header="Available Trips">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0">
+                        <TextBlock Text="Available Trips" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="TripsDataGrid" 
+                              Grid.Row="1" 
+                              AutoGenerateColumns="False" 
+                              IsReadOnly="True"
+                              GridLinesVisibility="All"
+                              AlternatingRowBackground="LightGray"
+                              RowHeaderWidth="0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+                            <DataGridTextColumn Header="Pick-up Location" Binding="{Binding PickUpLocation.Name}" Width="*"/>
+                            <DataGridTextColumn Header="Drop-off Location" Binding="{Binding DropOffLocation.Name}" Width="*"/>
+                            <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate}" Width="Auto"/>
+                            <DataGridTextColumn Header="Time" Binding="{Binding HourInDay}" Width="Auto"/>
+                            <DataGridTextColumn Header="Min Persons" Binding="{Binding MinPerson}" Width="Auto"/>
+                            <DataGridTextColumn Header="Max Persons" Binding="{Binding MaxPerson}" Width="Auto"/>
+                            <DataGridTemplateColumn Header="Actions" Width="Auto">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Book" Click="BookTrip_Click" 
+                                                Margin="5" Padding="10,5"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- My Bookings Tab -->
+            <TabItem Header="My Bookings">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0">
+                        <TextBlock Text="My Bookings" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="MyBookingsDataGrid" 
+                  Grid.Row="1" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True"
+                  GridLinesVisibility="All"
+                  AlternatingRowBackground="LightGray"
+                  RowHeaderWidth="0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Booking ID" Binding="{Binding Id}" Width="Auto"/>
+                            <DataGridTextColumn Header="Trip ID" Binding="{Binding TripId}" Width="Auto"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
+                            <DataGridTemplateColumn Header="Actions" Width="Auto">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Cancel" Click="CancelBooking_Click" Margin="5" Padding="10,5">
+                                            <Button.Style>
+                                                <Style TargetType="Button">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Status}" Value="0">
+                                                            <Setter Property="IsEnabled" Value="False"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
