@@ -124,7 +124,7 @@ namespace Group1_WPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Group1_WPF;V1.0.0.0;component/customerwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Group1_WPF;component/customerwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CustomerWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

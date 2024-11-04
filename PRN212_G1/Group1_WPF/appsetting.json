@@ -4,6 +4,6 @@
     "Password": "@@abc123@@"
   },
   "ConnectionStrings": {
-    "DefaultConnectionString": "Data Source=LAPTOP-TKDQHPLV;Initial Catalog=PRN212;Persist Security Info=True;User ID=sa;Password=12345;Encrypt=False"
+    "DefaultConnectionString": "Data Source=(local);Initial Catalog=PRN212;Persist Security Info=True;User ID=sa;Password=12345;Encrypt=False"
   }
 }
