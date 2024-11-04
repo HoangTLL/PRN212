@@ -1,0 +1,46 @@
+﻿<Window x:Class="Group1_WPF.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group1_WPF"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Manage Trips">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Button x:Name="AddTripButton" Content="Add Trip" Margin="5" BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" Height="26" Width="89" Click="AddTripButton_Click"/>
+                        <Button x:Name="EditTripButton" Content="Edit Trip" Margin="5" Width="92" BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" Click="EditTripButton_Click"/>
+                        <Button x:Name="DeleteTripButton" Content="Delete Trip" Margin="5" Width="92" Background="#FF4096FF" BorderBrush="#FF4096FF" Foreground="White" Click="DeleteTripButton_Click"/>
+                    </StackPanel>
+                    <TextBox Grid.Row="1" Margin="5" Text="{Binding TripSearchText, UpdateSourceTrigger=PropertyChanged}" 
+                             ToolTip="Search trips by name"/>
+                    <DataGrid Grid.Row="2" ItemsSource="{Binding FilteredTrips}" SelectedItem="{Binding SelectedTrip}"
+                              AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                            <DataGridTextColumn Header="Pick Up Location" Binding="{Binding PickUpLocation.Name}"/>
+                            <DataGridTextColumn Header="Drop Off Location" Binding="{Binding DropOffLocation.Name}"/>
+                            <DataGridTextColumn Header="Max Person" Binding="{Binding MaxPerson}"/>
+                            <DataGridTextColumn Header="Min Person" Binding="{Binding MinPerson}"/>
+                            <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate}"/>
+                            <DataGridTextColumn Header="Hour In Date" Binding="{Binding HourInDay}"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding Status}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Manage Locations">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\Documents\New folder\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\
+C:\Users\OS\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\
 Group1_WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Admin\Documents\New folder\PRN212\PRN212_G1\Group1_WPF\App.xaml
-3263791786
+C:\Users\OS\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\App.xaml
+5270440988
 
-8-1230839358
-2481677943268
-CustomerWindow.xaml;LoginWindow.xaml;MainWindow.xaml;
+101359369638
+2481088389648
+AdminWindow.xaml;CustomerWindow.xaml;LoginWindow.xaml;MainWindow.xaml;TripDialog.xaml;
 
-False
+True
 
