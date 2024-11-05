@@ -22,5 +22,10 @@ namespace Services
         public bool UpdateTrip(Trip trip) => _tripRepository.UpdateTrip(trip);
 
         public bool DeleteTrip(int id) => _tripRepository.DeleteTrip(id);
+
+        public List<Trip> FindAvailableTrips(int pickUpLocationId, int dropOffLocationId)
+        {
+            return _tripRepository.FindAvailableTrips(pickUpLocationId, dropOffLocationId);
+        }
     }
 }

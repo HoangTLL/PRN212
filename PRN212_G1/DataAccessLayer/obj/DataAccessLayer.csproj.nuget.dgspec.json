@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
+    "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\BusinessObjects\\obj\\",
+        "projectPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\CytekPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CytekPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\CytekPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CytekPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +106,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj"
+              "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\prn212_project\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj"
               }
             }
           }
@@ -142,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

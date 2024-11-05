@@ -21,5 +21,10 @@ namespace Repositories
         public bool UpdateTrip(Trip trip) => _tripDAO.UpdateTrip(trip); // Return the result from DAO
 
         public bool DeleteTrip(int id) => _tripDAO.DeleteTrip(id); // Return the result from DAO
+
+        public List<Trip> FindAvailableTrips(int pickUpLocationId, int dropOffLocationId)
+        {
+            return _tripDAO.FindAvailableTrips(pickUpLocationId, dropOffLocationId);
+        }
     }
 }

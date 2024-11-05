@@ -28,4 +28,5 @@ public partial class Trip
     public virtual Location DropOffLocation { get; set; }
 
     public virtual Location PickUpLocation { get; set; }
+    public string TripInfo => $"Pickup: {PickUpLocation?.Name}, Dropoff: {DropOffLocation?.Name}, Status: {Status}, Date: {BookingDate}, hour: {HourInDay}"; // Cập nhật tên thuộc tính cho phù hợp
 }

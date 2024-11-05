@@ -1,0 +1,40 @@
+﻿<Window x:Class="Group1_WPF.BookingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group1_WPF"
+        mc:Ignorable="d"
+        Title="BookingWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Height="395">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Content="Add Booking or Update" Click="AddBooking_Click" Margin="5"/>
+               
+                <Button Content="Delete Booking" Click="DeleteBooking_Click" Margin="5"/>
+                <TextBox Margin="5" Text="{Binding BookingSearchText, UpdateSourceTrigger=PropertyChanged}" 
+                         ToolTip="Search Booking By UserId" Width="83"/>
+                <Button Content="Find Booking By userId" Click="FindBooking_Click" Margin="5"/>
+                <!-- Search button -->
+            </StackPanel>
+
+            <DataGrid x:Name="dgBooking" Grid.Row="2" ItemsSource="{Binding FilteredBookings}" SelectedItem="{Binding SelectedBooking, Mode=TwoWay}" 
+          AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                    <DataGridTextColumn Header="User ID" Binding="{Binding UserId}" />
+                    <DataGridTextColumn Header="Trip Id" Binding="{Binding TripId}" />
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" />
+                    <DataGridTextColumn Header="User Name" Binding="{Binding User.Name}" />
+                    <DataGridTextColumn Header="PickUpLocation" Binding="{Binding Trip.PickUpLocation.Name}" />
+                    <DataGridTextColumn Header="DropOffLocation" Binding="{Binding Trip.DropOffLocation.Name}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

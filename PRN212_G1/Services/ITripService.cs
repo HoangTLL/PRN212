@@ -10,5 +10,6 @@ namespace Services
         void SaveTrip(Trip trip);
         bool UpdateTrip(Trip trip);
         bool DeleteTrip(int id);
+        List<Trip> FindAvailableTrips(int pickUpLocationId, int dropOffLocationId);
     }
 }

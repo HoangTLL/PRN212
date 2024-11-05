@@ -1,5 +1,6 @@
 ﻿using BusinessObjects.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace DataAccessLayer
 {
@@ -15,7 +16,13 @@ namespace DataAccessLayer
         // Retrieve all bookings
         public List<Booking> GetBookings()
         {
-            return _context.Bookings.Include(b => b.User).Include(b => b.Trip).ToList();
+            return _context.Bookings
+        .Include(b => b.User)
+        .Include(b => b.Trip)
+            .ThenInclude(t => t.PickUpLocation) // Include PickUpLocation
+        .Include(b => b.Trip)
+            .ThenInclude(t => t.DropOffLocation) // Include DropOffLocation
+        .ToList();
         }
 
         // Find a booking by ID
@@ -30,8 +37,17 @@ namespace DataAccessLayer
         // Add a new booking
         public void AddBooking(Booking booking)
         {
-            _context.Bookings.Add(booking);
-            _context.SaveChanges();
+            try
+            {
+                _context.Bookings.Add(booking);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                // Log the error (ex) here if necessary
+                
+            }
+
         }
 
         // Update an existing booking

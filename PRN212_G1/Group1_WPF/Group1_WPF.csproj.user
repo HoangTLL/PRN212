@@ -10,6 +10,12 @@
     <Compile Update="AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="BookingDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookingWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CustomerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +28,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="AdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookingDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookingWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CustomerWindow.xaml">

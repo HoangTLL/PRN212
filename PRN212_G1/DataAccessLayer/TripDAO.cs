@@ -67,5 +67,15 @@ namespace DataAccessLayer
             }
             return false;
         }
+        public List<Trip> FindAvailableTrips(int pickUpLocationId, int dropOffLocationId)
+        {
+            return _context.Trips
+                .Include(t => t.PickUpLocation)
+                .Include(t => t.DropOffLocation)
+                .Where(t => t.PickUpLocationId == pickUpLocationId &&
+                            t.DropOffLocationId == dropOffLocationId &&
+                            t.Status == 1) // Assuming 'Status = 1' means "available"
+                .ToList();
+        }
     }
 }

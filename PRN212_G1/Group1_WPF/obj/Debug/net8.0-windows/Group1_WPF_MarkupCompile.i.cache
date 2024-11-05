@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\
+C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\
 Group1_WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\App.xaml
-5270440988
+C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\Group1_WPF\App.xaml
+7783612751
 
-101359369638
-2481303758878
-AdminWindow.xaml;CustomerWindow.xaml;LoginWindow.xaml;MainWindow.xaml;TripDialog.xaml;
+12-924245004
+248106638530
+AdminWindow.xaml;BookingDialog.xaml;BookingWindow.xaml;CustomerWindow.xaml;LoginWindow.xaml;MainWindow.xaml;TripDialog.xaml;
 
 True
 

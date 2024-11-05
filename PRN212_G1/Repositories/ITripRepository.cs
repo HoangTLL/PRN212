@@ -10,5 +10,7 @@ namespace Repositories
         void SaveTrip(Trip trip);
         bool UpdateTrip(Trip trip); // Return type changed to bool
         bool DeleteTrip(int id); // Return type changed to bool
+
+        List<Trip> FindAvailableTrips(int pickUpLocationId, int dropOffLocationId);
     }
 }
