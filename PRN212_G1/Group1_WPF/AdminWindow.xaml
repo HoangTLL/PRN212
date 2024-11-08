@@ -37,10 +37,50 @@
                     </DataGrid>
                 </Grid>
             </TabItem>
-            <TabItem Header="Manage Locations">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem Header="Manage Locations" Height="20" VerticalAlignment="Top">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="21*"/>
+                        <ColumnDefinition Width="376*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="0" Margin="462,10,0,10" Grid.Column="1">
+                        <TextBox x:Name="SearchLocationTextBox" Width="200" VerticalAlignment="Center"
+                                 Text="{Binding LocationSearchText, UpdateSourceTrigger=PropertyChanged}" 
+                                 ToolTip="Search locations by name" />
+                        <Button x:Name="SearchButton" Content="Search" Width="75" Margin="5,0,0,0" 
+                                VerticalAlignment="Center" Command="{Binding SearchLocationCommand}" Click="SearchButton_Click" />
+                    </StackPanel>
+                    <DataGrid x:Name="LocationsDataGrid" Grid.Row="1" Margin="10,10,10,10" 
+                                    ItemsSource="{Binding FilteredLocations}" 
+                             AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True"
+                                AlternatingRowBackground="LightGray" GridLinesVisibility="Horizontal" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto" MinWidth="50" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Location Name" Binding="{Binding Name}" Width="*" MinWidth="150"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100" MinWidth="80"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="2" Margin="190,10,0,10" Grid.Column="1">
+                        <Button x:Name="AddLocationButton" Content="Add Location" Margin="5" 
+                                BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" 
+                                Width="100" Click="AddLocationButton_Click"/>
+                        <Button x:Name="EditLocationButton" Content="Edit Location" Margin="5" 
+                                Width="100" BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" 
+                                Click="EditLocationButton_Click"/>
+                        <Button x:Name="DeleteLocationButton" Content="Delete Location" Margin="5" 
+                                Width="100" Background="#FF4096FF" BorderBrush="#FF4096FF" Foreground="White" 
+                                Click="DeleteLocationButton_Click"/>
+                    </StackPanel>
+                </Grid>
             </TabItem>
         </TabControl>
-
     </Grid>
 </Window>

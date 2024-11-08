@@ -5,28 +5,19 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Group1_WPF
 {
-    /// <summary>
-    /// Interaction logic for AdminWindow.xaml
-    /// </summary>
-    public partial class AdminWindow : Window
+    public partial class AdminWindow : Window, INotifyPropertyChanged
     {
         private readonly ITripService tripService;
+        private readonly ILocationService locationService;
         private ObservableCollection<Trip> trips;
+        private ObservableCollection<Location> locations;
         private Trip selectedTrip;
         private string tripSearchText;
+        private string locationSearchText; // Add this for location search text
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -34,7 +25,9 @@ namespace Group1_WPF
         {
             InitializeComponent();
             tripService = new TripService();
+            locationService = new LocationService();
             LoadTrip();
+            LoadLocation();
             DataContext = this;
         }
 
@@ -63,6 +56,40 @@ namespace Group1_WPF
                 OnPropertyChanged(nameof(FilteredTrips));
             }
         }
+
+        private void LoadLocation()
+        {
+            var locationsList = locationService.GetLocations();
+            Locations = new ObservableCollection<Location>(locationsList);
+        }
+
+        public ObservableCollection<Location> Locations
+        {
+            get => locations;
+            set
+            {
+                locations = value;
+                OnPropertyChanged(nameof(Locations));
+                OnPropertyChanged(nameof(FilteredLocations)); // Notify that FilteredLocations may change
+            }
+        }
+
+        public string LocationSearchText // Add property for location search text
+        {
+            get => locationSearchText;
+            set
+            {
+                locationSearchText = value;
+                OnPropertyChanged(nameof(LocationSearchText));
+                OnPropertyChanged(nameof(FilteredLocations)); // Notify that FilteredLocations may change
+            }
+        }
+
+        public IEnumerable<Location> FilteredLocations => // Add this property
+            string.IsNullOrWhiteSpace(LocationSearchText)
+                ? Locations
+                : Locations.Where(l =>
+                    l.Name.Contains(LocationSearchText, StringComparison.OrdinalIgnoreCase));
 
         public Trip SelectedTrip
         {
@@ -106,9 +133,10 @@ namespace Group1_WPF
                 RefreshTrips();
             }
         }
+
         private void DeleteTripButton_Click(object sender, RoutedEventArgs e)
         {
-            if (SelectedTrip == null) return ;
+            if (SelectedTrip == null) return;
             var result = MessageBox.Show($"Are you sure you want to delete TripID {SelectedTrip.Id} ?",
                 "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
@@ -127,6 +155,51 @@ namespace Group1_WPF
                 Trips.Add(room);
             }
             OnPropertyChanged(nameof(FilteredTrips));
+        }
+
+        private void AddLocationButton_Click(object sender, RoutedEventArgs e)
+        {
+            var locationDialog = new LocationDialog();
+            locationDialog.ShowDialog();
+            FillLocationsDataGrid();
+        }
+
+        private void EditLocationButton_Click(object sender, RoutedEventArgs e)
+        {
+            Location selected = LocationsDataGrid.SelectedItem as Location;
+            if (selected == null)
+            {
+                MessageBox.Show("Please select a row before editing", "Select a row", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
+            var locationDialog = new LocationDialog(selected);
+            locationDialog.ShowDialog();
+            FillLocationsDataGrid();
+        }
+
+        private void DeleteLocationButton_Click(object sender, RoutedEventArgs e)
+        {
+            Location? selected = LocationsDataGrid.SelectedItem as Location;
+            if (selected == null)
+            {
+                MessageBox.Show("Please select a row before deleting", "Select a row", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
+            MessageBoxResult answer = MessageBox.Show("Do you really want to delete?", "Confirm?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (answer == MessageBoxResult.No)
+                return;
+            locationService.DeleteLocation(selected.Id);
+            FillLocationsDataGrid();
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            FillLocationsDataGrid(); // Reload the data based on search criteria
+        }
+
+        private void FillLocationsDataGrid()
+        {
+            LocationsDataGrid.ItemsSource = FilteredLocations.ToList(); // Bind filtered locations to the DataGrid
         }
     }
 }

@@ -365,3 +365,9 @@ C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\Group1_WPF\obj\Debug\
 C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\ref\Group1_WPF.dll
 C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\BookingDialog.g.cs
 C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\BookingDialog.baml
+C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\BookingDialog.g.cs
+C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\BookingWindow.g.cs
+C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\LocationDialog.g.cs
+C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\BookingDialog.baml
+C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\BookingWindow.baml
+C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\LocationDialog.baml
