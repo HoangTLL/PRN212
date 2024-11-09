@@ -28,6 +28,9 @@
     <Compile Update="TripDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AdminWindow.xaml">
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TripDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

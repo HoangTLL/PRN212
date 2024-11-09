@@ -1,4 +1,5 @@
 ﻿using BusinessObjects.Models;
+using Microsoft.VisualBasic.ApplicationServices;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -11,13 +12,17 @@ namespace Group1_WPF
 {
     public partial class AdminWindow : Window, INotifyPropertyChanged
     {
+        private UserService _UserService = new();
+        private User selectedUser;
         private readonly ITripService tripService;
         private readonly ILocationService locationService;
+        private ObservableCollection<User> users;
         private ObservableCollection<Trip> trips;
         private ObservableCollection<Location> locations;
         private Trip selectedTrip;
         private string tripSearchText;
         private string locationSearchText; // Add this for location search text
+        private string userSearchText;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -29,6 +34,10 @@ namespace Group1_WPF
             LoadTrip();
             LoadLocation();
             DataContext = this;
+        }
+        private void LoadUsers()
+        {
+            Users = new ObservableCollection<User>(_UserService.GetCustomers());
         }
 
         private void LoadTrip()
@@ -200,6 +209,58 @@ namespace Group1_WPF
         private void FillLocationsDataGrid()
         {
             LocationsDataGrid.ItemsSource = FilteredLocations.ToList(); // Bind filtered locations to the DataGrid
+        }
+
+        private void DeleteUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedUser == null) return;
+            var result = MessageBox.Show($"Are you sure you want to delete {SelectedUser.Id} ?",
+                "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (result == MessageBoxResult.Yes)
+            {
+                _UserService.DeleteCustomer(SelectedUser.Id);
+                FillDataGrid();
+            }
+        }
+
+        public User SelectedUser
+        {
+            get => selectedUser;
+            set
+            {
+                selectedUser = value;
+                OnPropertyChanged(nameof(SelectedUser));
+            }
+        }
+
+        private void EditUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedUser == null) return;
+            var result = MessageBox.Show($"Are you sure you want to delete {SelectedUser.Id} ?",
+                "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (result == MessageBoxResult.Yes)
+            {
+                _UserService.DeleteCustomer(SelectedUser.Id);
+                FillDataGrid();
+            }
+        }
+
+        private void AddUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserDialog userDialog = new();
+            userDialog.ShowDialog();
+            FillDataGrid();
+        }
+
+        private void TabControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            FillDataGrid();
+        }
+
+        private void FillDataGrid()
+        {
+            UserDataGrid.ItemsSource = null;
+            UserDataGrid.ItemsSource = _UserService.GetCustomers();
         }
     }
 }

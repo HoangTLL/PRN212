@@ -81,6 +81,38 @@
                     </StackPanel>
                 </Grid>
             </TabItem>
+            <TabItem Header="Manage User" Margin="-2,-2,-2,0">
+                <Grid Background="White">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Button x:Name="AddUserButton" Content="Add User" Margin="5" BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" Height="26" Width="89" Click="AddUserButton_Click"/>
+                            <Button x:Name="EditUserButton" Content="Edit User" Margin="5" Width="92" BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" Click="EditUserButton_Click"/>
+                            <Button x:Name="DeleteUserButton" Content="Delete User" Margin="5" Width="92" Background="#FF4096FF" BorderBrush="#FF4096FF" Foreground="White" Click="DeleteUserButton_Click"/>
+                        </StackPanel>
+                        <TextBox x:Name="SearchUser"  Grid.Row="1" Margin="5" Text="{Binding UserSearchText, UpdateSourceTrigger=PropertyChanged}" 
+                ToolTip="Search trips by name"/>
+                        <DataGrid x:Name="UserDataGrid" Grid.Row="2" ItemsSource="{Binding FilteredUsers}" SelectedItem="{Binding SelectedUser}"
+                AutoGenerateColumns="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                                <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                                <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}"/>
+                                <DataGridTextColumn Header="Password" Binding="{Binding Password}"/>
+                                <DataGridTextColumn Header="Date Of Birth" Binding="{Binding DateOfBirth}"/>
+                                <DataGridTextColumn Header="Created At" Binding="{Binding CreatedAt}"/>
+                                <DataGridTextColumn Header="Role" Binding="{Binding Role}"/>
+                                <DataGridTextColumn Header="Status" Binding="{Binding Status}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>
