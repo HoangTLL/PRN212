@@ -1,6 +1,7 @@
 ﻿using BusinessObjects.Models;
 using Services;
 using System;
+using System.ComponentModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,6 +14,9 @@ namespace Group1_WPF
         private readonly ITripService _tripService;
         private readonly IBookingService _bookingService;
         private User _currentUser;
+        private Booking selectedBooking;
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public CustomerWindow(User user)
         {
@@ -24,6 +28,7 @@ namespace Group1_WPF
             LoadUserData();
             LoadTrips();
             LoadMyBookings();
+            DataContext = this;
         }
 
         private void LoadUserData()
@@ -197,12 +202,42 @@ namespace Group1_WPF
                 }
             }
         }
+        public Booking SelectedBooking
+        {
+            get => selectedBooking;
+            set
+            {
+                selectedBooking = value;
+                OnPropertyChanged(nameof(SelectedBooking));
+            }
+        }
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
             this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedBooking == null)
+            {
+                MessageBox.Show("Please select a booking to delete.");
+                return;
+            }
+
+            // Confirm deletion
+            var result = MessageBox.Show("Are you sure you want to delete this booking?", "Confirm Deletion", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+            {
+                _bookingService.DeleteBooking(SelectedBooking.Id); // Assuming you have a method in the service to delete the booking
+                LoadMyBookings(); // Refresh the booking list
+            }
         }
     }
 }

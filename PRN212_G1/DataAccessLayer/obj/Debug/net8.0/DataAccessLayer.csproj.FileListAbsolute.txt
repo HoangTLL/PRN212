@@ -61,3 +61,19 @@ C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\DataAccessLayer\obj\D
 C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
 C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\CytekPC\OneDrive\Desktop\prn212_project\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\bin\Debug\net8.0\BusinessObjects.dll
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\bin\Debug\net8.0\BusinessObjects.pdb
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\CytekPC\OneDrive\Desktop\New folder\PRN212_G1\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

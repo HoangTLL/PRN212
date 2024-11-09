@@ -4341,19 +4341,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\CytekPC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
+      "projectUniqueName": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
       "projectName": "BusinessObjects",
-      "projectPath": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\obj\\",
+      "projectPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj",
+      "packagesPath": "C:\\Users\\CytekPC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\BusinessObjects\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CytekPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

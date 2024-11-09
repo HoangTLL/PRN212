@@ -106,9 +106,10 @@
 
                     <StackPanel Grid.Row="0">
                         <TextBlock Text="My Bookings" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+                        <Button Content="Delete" Width="146" Click="Button_Click"/>
                     </StackPanel>
 
-                    <DataGrid x:Name="MyBookingsDataGrid" 
+                    <DataGrid x:Name="MyBookingsDataGrid"  SelectedItem="{Binding SelectedBooking, Mode=TwoWay}" 
                   Grid.Row="1" 
                   AutoGenerateColumns="False" 
                   IsReadOnly="True"
@@ -119,6 +120,10 @@
                             <DataGridTextColumn Header="Booking ID" Binding="{Binding Id}" Width="Auto"/>
                             <DataGridTextColumn Header="Trip ID" Binding="{Binding TripId}" Width="Auto"/>
                             <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
+                            <DataGridTextColumn Header="PickUpLocation" Binding="{Binding Trip.PickUpLocation.Name}" Width="Auto"/>
+                            <DataGridTextColumn Header="DropOffLocation" Binding="{Binding Trip.DropOffLocation.Name}" />
+                            <DataGridTextColumn Header="Booking Date" Binding="{Binding Trip.BookingDate}" Width="Auto"/>
+                            <DataGridTextColumn Header="Time" Binding="{Binding Trip.HourInDay}" Width="Auto"/>
                             <DataGridTemplateColumn Header="Actions" Width="Auto">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
