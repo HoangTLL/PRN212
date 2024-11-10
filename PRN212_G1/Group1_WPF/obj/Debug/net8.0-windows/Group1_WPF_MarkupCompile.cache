@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\
+D:\Work\PRN212\PRN212\PRN212_G1\Group1_WPF\obj\Debug\net8.0-windows\
 Group1_WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Admin\Documents\GitHub\PRN212\PRN212_G1\Group1_WPF\App.xaml
-8-1264544562
+D:\Work\PRN212\PRN212\PRN212_G1\Group1_WPF\App.xaml
+91682552318
 
-111342802568
-2481303758878
-AdminWindow.xaml;BookingDialog.xaml;BookingWindow.xaml;CustomerWindow.xaml;LocationDialog.xaml;LoginWindow.xaml;MainWindow.xaml;TripDialog.xaml;
+121603906796
+248-226451617
+AdminWindow.xaml;BookingDialog.xaml;BookingWindow.xaml;CustomerWindow.xaml;LocationDialog.xaml;LoginWindow.xaml;MainWindow.xaml;TripDialog.xaml;UserDialog.xaml;
 
 False
 

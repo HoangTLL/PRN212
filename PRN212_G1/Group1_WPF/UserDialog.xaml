@@ -14,32 +14,32 @@
             <TextBox x:Name="UserIdTextBox" TextWrapping="Wrap" Width="300"/>
 
             <Label Content="  Name:"/>
-            <TextBox x:Name="NameTextBox" TextWrapping="Wrap"  Width="300"/>
+            <TextBox x:Name="NameTextBox" TextWrapping="Wrap"  Width="300" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Content="  Email:"/>
-            <TextBox x:Name="EmailTextBox" Width="300"/>
+            <TextBox x:Name="EmailTextBox" Width="300" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Content="  Phone Number:"/>
-            <TextBox x:Name="PhoneNumberTextBox" Width="300"/>
+            <TextBox x:Name="PhoneNumberTextBox" Width="300" Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Content="  Password:"/>
-            <TextBox x:Name="PasswordTextBox" Width="300"/>
+            <TextBox x:Name="PasswordTextBox" Width="300" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Content="  Date Of Birth:"/>
-            <DatePicker x:Name="DateOfBirthDatePicker" Width="300"/>
+            <DatePicker x:Name="DateOfBirthDatePicker" Width="300" SelectedDate="{Binding DateOfBirthDateTime, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Content="  Created At:"/>
-            <DatePicker x:Name="CreatedAtDatePicker" Width="300"/>
+            <DatePicker x:Name="CreatedAtDatePicker" Width="300" SelectedDate="{Binding CreatedAt, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Content="  Role:"/>
-            <ComboBox x:Name="RoleComboBox" Width="300">
-                <ComboBoxItem Content="Admin"/>
-                <ComboBoxItem Content="Staff"/>
-                <ComboBoxItem Content="User"/>
+            <ComboBox x:Name="RoleComboBox" Width="300" SelectedValue="{Binding Role, UpdateSourceTrigger=PropertyChanged}" SelectedValuePath="Content">
+                <ComboBoxItem Content="admin"/>
+                <ComboBoxItem Content="staff"/>
+                <ComboBoxItem Content="user"/>
             </ComboBox>
 
             <Label Content="  Status:"/>
-            <ComboBox x:Name="StatusComboBox" Width="300">
+            <ComboBox x:Name="StatusComboBox" Width="300" SelectedValue="{Binding Status, UpdateSourceTrigger=PropertyChanged}" SelectedValuePath="Content">
                 <ComboBoxItem Content="1"/>
                 <ComboBoxItem Content="2"/>
             </ComboBox>

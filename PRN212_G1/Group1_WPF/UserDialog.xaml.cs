@@ -22,87 +22,56 @@ namespace Group1_WPF
     /// </summary>
     public partial class UserDialog : Window
     {
-        public User EditedUser { get; set; } = null;
-        private readonly IUserService iUserService;
-        private UserService _service = new();
+
+        private readonly UserService _userService;
         public User User { get; set; }
-        public UserDialog()
+
+        public DateTime? DateOfBirthDateTime
+        {
+            get => User.DateOfBirth.HasValue ? User.DateOfBirth.Value.ToDateTime(TimeOnly.MinValue) : (DateTime?)null;
+            set => User.DateOfBirth = value.HasValue ? DateOnly.FromDateTime(value.Value) : (DateOnly?)null;
+        }
+
+        public UserDialog(User user = null)
         {
             InitializeComponent();
-            iUserService = new UserService();
+            _userService = new UserService();
+            User = user ?? new User();
+            DataContext = User; 
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            User _user = new();
-            _user.Id = int.Parse(UserIdTextBox.Text);
-            _user.Name = NameTextBox.Text;
-            _user.Email = EmailTextBox.Text;
-            _user.PhoneNumber = PhoneNumberTextBox.Text;
-            _user.Password = PasswordTextBox.Text;
-            if (DateOfBirthDatePicker.SelectedDate.HasValue)
+            if (User.Id == 0)
             {
-                _user.DateOfBirth = DateOnly.FromDateTime(DateOfBirthDatePicker.SelectedDate.Value);
+                _userService.SaveCustomer(User); 
             }
             else
             {
-                MessageBox.Show("Please select a Date of Birth.", "Missing Information", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
+                _userService.UpdateCustomer(User);
             }
-
-            if (CreatedAtDatePicker.SelectedDate.HasValue)
-            {
-                _user.CreatedAt = CreatedAtDatePicker.SelectedDate.Value;
-            }
-            else
-            {
-                MessageBox.Show("Please select a Created At date.", "Missing Information", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            _user.Role = RoleComboBox.SelectedValue.ToString();
-            _user.Status = (StatusComboBox.SelectedItem as ComboBoxItem).Content.ToString().StartsWith("1") ? 1 : 2;
-            if (EditedUser == null)
-            {
-                iUserService.SaveCustomer(_user);
-            }
-            else
-            {
-                _service.UpdateCustomer(_user);
-            }
-            this.Close();
-
+            DialogResult = true;
+            Close();
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            DialogResult = false; 
+            Close();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void FillElements(User x)
-        {
-            if (x == null)
-            {
-                return;
-            }
-            else
-            {
-                UserIdTextBox.Text = x.Id.ToString();
-                NameTextBox.Text = x.Name;
-                EmailTextBox.Text = x.Email;
-                PhoneNumberTextBox.Text = x.PhoneNumber.ToString();
-                PasswordTextBox.Text = x.Password.ToString();
-                DateOfBirthDatePicker.SelectedDate = x.DateOfBirth.HasValue ? x.DateOfBirth.Value.ToDateTime(new TimeOnly(0, 0))
-                : (DateTime?)null;
-
-                CreatedAtDatePicker.SelectedDate = x.CreatedAt;
-                RoleComboBox.SelectedValue = x.Role;
-                StatusComboBox.SelectedValue = x.Status;
-            }
+            // Pre-fill elements if editing an existing user
+            UserIdTextBox.Text = User.Id.ToString();
+            NameTextBox.Text = User.Name;
+            EmailTextBox.Text = User.Email;
+            PhoneNumberTextBox.Text = User.PhoneNumber;
+            PasswordTextBox.Text = User.Password;
+            DateOfBirthDatePicker.SelectedDate = User.DateOfBirth?.ToDateTime(new TimeOnly(0, 0));
+            CreatedAtDatePicker.SelectedDate = User.CreatedAt;
+            RoleComboBox.SelectedItem = User.Role;
+            StatusComboBox.SelectedItem = User.Status?.ToString();
         }
     }
 }

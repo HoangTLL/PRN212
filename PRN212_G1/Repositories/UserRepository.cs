@@ -4,7 +4,7 @@ using DataAccessLayer;
 namespace Repositories
 {
     public class UserRepository : IUserRepository
-    {
+    { 
         private readonly UserDAO _userDAO;
 
         public UserRepository()
@@ -23,5 +23,7 @@ namespace Repositories
         public bool UpdateUser(User user) => _userDAO.UpdateUser(user);
 
         public bool DeleteUser(int id) => _userDAO.DeleteUser(id);
+
+        
     }
 }

@@ -10,20 +10,24 @@
         <TabControl>
             <TabItem Header="Manage Trips">
                 <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="123*"/>
+                        <ColumnDefinition Width="274*"/>
+                    </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <StackPanel Orientation="Horizontal" Margin="5">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5" Grid.ColumnSpan="2">
                         <Button x:Name="AddTripButton" Content="Add Trip" Margin="5" BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" Height="26" Width="89" Click="AddTripButton_Click"/>
                         <Button x:Name="EditTripButton" Content="Edit Trip" Margin="5" Width="92" BorderBrush="#FF4096FF" Background="#FF4096FF" Foreground="White" Click="EditTripButton_Click"/>
                         <Button x:Name="DeleteTripButton" Content="Delete Trip" Margin="5" Width="92" Background="#FF4096FF" BorderBrush="#FF4096FF" Foreground="White" Click="DeleteTripButton_Click"/>
                     </StackPanel>
-                    <TextBox Grid.Row="1" Margin="5" Text="{Binding TripSearchText, UpdateSourceTrigger=PropertyChanged}" 
-                             ToolTip="Search trips by name"/>
+                    <TextBox Grid.Row="1" Margin="5,5,5,5" Text="{Binding TripSearchText, UpdateSourceTrigger=PropertyChanged}" 
+                             ToolTip="Search trips by name" Grid.ColumnSpan="2"/>
                     <DataGrid Grid.Row="2" ItemsSource="{Binding FilteredTrips}" SelectedItem="{Binding SelectedTrip}"
-                              AutoGenerateColumns="False">
+                              AutoGenerateColumns="False" Grid.ColumnSpan="2">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
                             <DataGridTextColumn Header="Pick Up Location" Binding="{Binding PickUpLocation.Name}"/>
@@ -81,7 +85,7 @@
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="Manage User" Margin="-2,-2,-2,0">
+            <TabItem Header="Manage User" Margin="-2,-2,-2,0" Loaded="TabItem_Loaded">
                 <Grid Background="White">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -95,7 +99,7 @@
                             <Button x:Name="DeleteUserButton" Content="Delete User" Margin="5" Width="92" Background="#FF4096FF" BorderBrush="#FF4096FF" Foreground="White" Click="DeleteUserButton_Click"/>
                         </StackPanel>
                         <TextBox x:Name="SearchUser"  Grid.Row="1" Margin="5" Text="{Binding UserSearchText, UpdateSourceTrigger=PropertyChanged}" 
-                ToolTip="Search trips by name"/>
+                                ToolTip="Search user by name"/>
                         <DataGrid x:Name="UserDataGrid" Grid.Row="2" ItemsSource="{Binding FilteredUsers}" SelectedItem="{Binding SelectedUser}"
                 AutoGenerateColumns="False">
                             <DataGrid.Columns>

@@ -85,7 +85,7 @@ namespace Group1_WPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Group1_WPF;V1.0.0.0;component/bookingdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Group1_WPF;component/bookingdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BookingDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

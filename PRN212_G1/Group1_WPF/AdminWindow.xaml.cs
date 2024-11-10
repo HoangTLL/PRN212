@@ -1,5 +1,4 @@
 ﻿using BusinessObjects.Models;
-using Microsoft.VisualBasic.ApplicationServices;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -37,7 +36,34 @@ namespace Group1_WPF
         }
         private void LoadUsers()
         {
-            Users = new ObservableCollection<User>(_UserService.GetCustomers());
+            users = new ObservableCollection<User>(_UserService.GetCustomers());
+        }
+        public ObservableCollection<User> Users
+        {
+            get => users;
+            set
+            {
+                users = value;
+                OnPropertyChanged(nameof(Users));
+                OnPropertyChanged(nameof(FilteredUsers));
+            }
+        }
+        public IEnumerable<User> FilteredUsers =>
+            string.IsNullOrWhiteSpace(UserSearchText)
+                ? Users
+                : Users.Where(u =>
+                    u.Name.Contains(UserSearchText, StringComparison.OrdinalIgnoreCase) ||
+                    u.Email.Contains(UserSearchText, StringComparison.OrdinalIgnoreCase) ||
+                    u.PhoneNumber.Contains(UserSearchText, StringComparison.OrdinalIgnoreCase));
+        public string UserSearchText
+        {
+            get => userSearchText;
+            set
+            {
+                userSearchText = value;
+                OnPropertyChanged(nameof(UserSearchText));
+                OnPropertyChanged(nameof(FilteredUsers));
+            }
         }
 
         private void LoadTrip()
@@ -235,32 +261,38 @@ namespace Group1_WPF
 
         private void EditUserButton_Click(object sender, RoutedEventArgs e)
         {
-            if (SelectedUser == null) return;
-            var result = MessageBox.Show($"Are you sure you want to delete {SelectedUser.Id} ?",
-                "Delete Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-            if (result == MessageBoxResult.Yes)
+            if (SelectedUser == null)
             {
-                _UserService.DeleteCustomer(SelectedUser.Id);
+                MessageBox.Show("Please select a user to edit.", "Edit User", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            var userDialog = new UserDialog(SelectedUser);
+            if (userDialog.ShowDialog() == true)
+            {
                 FillDataGrid();
             }
         }
 
         private void AddUserButton_Click(object sender, RoutedEventArgs e)
         {
-            UserDialog userDialog = new();
-            userDialog.ShowDialog();
-            FillDataGrid();
-        }
-
-        private void TabControl_Loaded(object sender, RoutedEventArgs e)
-        {
-            FillDataGrid();
+            // Open the UserDialog without passing an existing user, so a new user is created
+            var userDialog = new UserDialog();
+            if (userDialog.ShowDialog() == true) // If dialog result is true (Save clicked)
+            {
+                FillDataGrid(); // Refresh the data grid to show the new user
+            }
         }
 
         private void FillDataGrid()
         {
             UserDataGrid.ItemsSource = null;
             UserDataGrid.ItemsSource = _UserService.GetCustomers();
+        }
+
+        private void TabItem_Loaded(object sender, RoutedEventArgs e)
+        {
+            FillDataGrid();
         }
     }
 }

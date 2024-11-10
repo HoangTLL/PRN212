@@ -5,7 +5,7 @@ namespace DataAccessLayer
 {
     public class UserDAO
     {
-        private readonly PRN212Context _context;
+        private PRN212Context _context;
 
         public UserDAO()
         {

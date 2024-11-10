@@ -3,12 +3,68 @@
   "WorkspaceRootPath": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\userdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\userdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\userdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\userdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{746907C5-80D6-4C19-AAAE-104126E488FD}|BusinessObjects\\BusinessObjects.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\businessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{746907C5-80D6-4C19-AAAE-104126E488FD}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{746907C5-80D6-4C19-AAAE-104126E488FD}|BusinessObjects\\BusinessObjects.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\businessobjects\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{746907C5-80D6-4C19-AAAE-104126E488FD}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E08DA974-118B-4501-A7D4-4A1AE183BA63}|Services\\Services.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E08DA974-118B-4501-A7D4-4A1AE183BA63}|Services\\Services.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\tripdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\tripdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2B463E-8A86-4279-BDE3-0F35CC48A209}|DataAccessLayer\\DataAccessLayer.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\dataaccesslayer\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2B463E-8A86-4279-BDE3-0F35CC48A209}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528CBD71-D0EA-4B43-9726-2E6508107D49}|Repositories\\Repositories.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528CBD71-D0EA-4B43-9726-2E6508107D49}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528CBD71-D0EA-4B43-9726-2E6508107D49}|Repositories\\Repositories.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528CBD71-D0EA-4B43-9726-2E6508107D49}|Repositories\\Repositories.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\locationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\locationdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\bookingdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\bookingdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\bookingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\bookingwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\locationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\locationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\appsetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -17,14 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\userdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\userdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|d:\\work\\prn212\\prn212\\prn212_g1\\group1_wpf\\userdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{98BDA92F-E5E6-43E1-9BAE-F6F56F9FC32F}|Group1_WPF\\Group1_WPF.csproj|solutionrelative:group1_wpf\\userdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,58 +90,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\AdminWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Group1_WPF\\AdminWindow.xaml.cs",
-              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\AdminWindow.xaml.cs",
-              "RelativeToolTip": "Group1_WPF\\AdminWindow.xaml.cs",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAAAAMBAAAjAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T04:19:54.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T13:16:51.139Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsetting.json",
-              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\appsetting.json",
-              "RelativeDocumentMoniker": "Group1_WPF\\appsetting.json",
-              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\appsetting.json",
-              "RelativeToolTip": "Group1_WPF\\appsetting.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-09T04:19:38.729Z",
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\Models\\User.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\Models\\User.cs",
+              "RelativeToolTip": "BusinessObjects\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T12:38:26.336Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TripDialog.xaml.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\TripDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Group1_WPF\\TripDialog.xaml.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\TripDialog.xaml.cs",
+              "RelativeToolTip": "Group1_WPF\\TripDialog.xaml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwC0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T11:26:45.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LocationDialog.xaml.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\LocationDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Group1_WPF\\LocationDialog.xaml.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\LocationDialog.xaml.cs",
+              "RelativeToolTip": "Group1_WPF\\LocationDialog.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwCgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:43:36.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\DataAccessLayer\\UserDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UserDAO.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\DataAccessLayer\\UserDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\UserDAO.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T08:59:27.764Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\App.xaml",
-              "RelativeDocumentMoniker": "Group1_WPF\\App.xaml",
-              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\App.xaml",
-              "RelativeToolTip": "Group1_WPF\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-09T04:19:35.493Z",
+              "Title": "efpt.config.json",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\efpt.config.json",
+              "RelativeDocumentMoniker": "BusinessObjects\\efpt.config.json",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\efpt.config.json",
+              "RelativeToolTip": "BusinessObjects\\efpt.config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-09T05:22:50.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "UserDialog.xaml.cs",
               "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\UserDialog.xaml.cs",
               "RelativeDocumentMoniker": "Group1_WPF\\UserDialog.xaml.cs",
               "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\UserDialog.xaml.cs",
               "RelativeToolTip": "Group1_WPF\\UserDialog.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T04:19:17.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group1_WPF\\AdminWindow.xaml.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "Group1_WPF\\AdminWindow.xaml.cs",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAgwPQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T04:19:54.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsetting.json",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\appsetting.json",
+              "RelativeDocumentMoniker": "Group1_WPF\\appsetting.json",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\appsetting.json",
+              "RelativeToolTip": "Group1_WPF\\appsetting.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-09T04:19:38.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserDialog.xaml",
               "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\UserDialog.xaml",
               "RelativeDocumentMoniker": "Group1_WPF\\UserDialog.xaml",
@@ -105,15 +214,97 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "Group1_WPF\\AdminWindow.xaml",
               "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\AdminWindow.xaml",
               "RelativeToolTip": "Group1_WPF\\AdminWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-09T04:11:23.13Z",
+              "WhenOpened": "2024-11-09T04:11:23.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T12:29:35.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T12:34:08.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\App.xaml",
+              "RelativeDocumentMoniker": "Group1_WPF\\App.xaml",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\App.xaml",
+              "RelativeToolTip": "Group1_WPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T04:19:35.493Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group1_WPF\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "Group1_WPF\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T08:55:44.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookingWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\BookingWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Group1_WPF\\BookingWindow.xaml.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\BookingWindow.xaml.cs",
+              "RelativeToolTip": "Group1_WPF\\BookingWindow.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T11:19:30.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingDialog.xaml.cs",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\BookingDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Group1_WPF\\BookingDialog.xaml.cs",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\BookingDialog.xaml.cs",
+              "RelativeToolTip": "Group1_WPF\\BookingDialog.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T11:20:02.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LocationDialog.xaml",
+              "DocumentMoniker": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\LocationDialog.xaml",
+              "RelativeDocumentMoniker": "Group1_WPF\\LocationDialog.xaml",
+              "ToolTip": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\Group1_WPF\\LocationDialog.xaml",
+              "RelativeToolTip": "Group1_WPF\\LocationDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T12:44:14.181Z"
             }
           ]
         }
