@@ -3068,19 +3068,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\CytekPC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\CytekPC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CytekPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3095,8 +3095,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "D:\\Work\\PRN212\\PRN212\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj"
+            "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "C:\\Users\\CytekPC\\OneDrive\\Desktop\\New folder\\PRN212_G1\\BusinessObjects\\BusinessObjects.csproj"
             }
           }
         }

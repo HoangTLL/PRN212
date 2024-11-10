@@ -15,7 +15,7 @@ namespace Group1_WPF
         private User selectedUser;
         private readonly ITripService tripService;
         private readonly ILocationService locationService;
-        private ObservableCollection<User> users;
+        private ObservableCollection<User> Users;
         private ObservableCollection<Trip> trips;
         private ObservableCollection<Location> locations;
         private Trip selectedTrip;
