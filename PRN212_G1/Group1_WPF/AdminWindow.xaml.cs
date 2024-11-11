@@ -15,7 +15,7 @@ namespace Group1_WPF
         private User selectedUser;
         private readonly ITripService tripService;
         private readonly ILocationService locationService;
-        private ObservableCollection<User> Users;
+        private ObservableCollection<User> users;
         private ObservableCollection<Trip> trips;
         private ObservableCollection<Location> locations;
         private Trip selectedTrip;
@@ -96,6 +96,7 @@ namespace Group1_WPF
         {
             var locationsList = locationService.GetLocations();
             Locations = new ObservableCollection<Location>(locationsList);
+
         }
 
         public ObservableCollection<Location> Locations
@@ -196,7 +197,8 @@ namespace Group1_WPF
         {
             var locationDialog = new LocationDialog();
             locationDialog.ShowDialog();
-            FillLocationsDataGrid();
+            //FillLocationsDataGrid();
+            LoadLocation();
         }
 
         private void EditLocationButton_Click(object sender, RoutedEventArgs e)
@@ -234,7 +236,7 @@ namespace Group1_WPF
 
         private void FillLocationsDataGrid()
         {
-            LocationsDataGrid.ItemsSource = FilteredLocations.ToList(); // Bind filtered locations to the DataGrid
+            LocationsDataGrid.ItemsSource = locationService.GetLocations().ToList(); // Bind filtered locations to the DataGrid
         }
 
         private void DeleteUserButton_Click(object sender, RoutedEventArgs e)
